@@ -1,0 +1,107 @@
+.print-service-providers-list {
+  display: none;
+}
+
+@media print {
+  .App {
+    display: none;
+  }
+
+  @page {
+    margin: 5%;
+    size: letter;
+  }
+
+  .print-service-providers-list {
+      background-color: white;
+      width: 100%;
+      h2 {
+        margin-bottom: 8px;
+      }
+      .page {
+        page-break-inside: avoid;
+      }
+
+      .print-provider {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-bottom: 16px;
+        border-bottom: 1px solid $table-rule-color;
+
+        page-break-inside: avoid;
+        &__header {
+          flex: 1 1 auto;
+        }
+
+        &__body {
+          flex: 1 1 auto;
+
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+        }
+
+        .service-provider-list-item {
+          flex: 1 1 auto;
+
+          &__body {
+            h3 {
+              display: none;
+            }
+          }
+        }
+
+        .static-provider-map {
+          flex: 1 1 auto;
+          margin: 8px 0;
+        }
+      }
+    }
+
+  .print-service-providers-list {
+      display: block;
+
+      &__providers {
+        padding-left: 16px;
+      }
+    }
+
+  p, span, a,
+  .address-text,
+  .website_url,
+  .phone_number,
+  .hours-of-operation-day__closed,
+  .hours-of-operation-day__hours,
+  .hours-of-operation-day__day-label {
+    font-weight: normal;
+    color: black;
+    font-size: 10pt;
+  }
+
+  .ui-icon {
+    display: none;
+  }
+
+  h2, h3 {
+    font-weight: bolder;
+    color: black;
+  }
+
+  .client {
+    page-break-after: always;
+    display: flex;
+    height: 800px;
+
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    &__name {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+  }
+}
+

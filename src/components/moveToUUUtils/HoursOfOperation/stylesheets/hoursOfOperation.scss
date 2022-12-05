@@ -1,0 +1,16 @@
+.hours-of-operation-day {
+  &__day-label {
+    text-transform: capitalize;
+    display: inline-block;
+    margin-right: 6px;
+    font-weight: bolder;
+    width: 80px;
+  }
+  &__hours {
+    display: inline-block;
+  }
+  &__closed {
+    display: inline-block;
+    color: $body-grey-color;
+  }
+}

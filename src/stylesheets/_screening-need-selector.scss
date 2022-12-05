@@ -1,0 +1,13 @@
+.screening-need-selector {
+  width: 322px;
+  &__body {
+    padding: 15px; /* to match card header padding */
+  }
+
+  .ui-form-field {
+    &__hint,
+    &__error {
+      display: none;
+    }
+  }
+}

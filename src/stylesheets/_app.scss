@@ -1,0 +1,26 @@
+.App {
+  header {
+    text-align: center;
+    margin: 1rem 4rem;
+    h1 {
+      margin-bottom: .5rem;
+    }
+  }
+}
+
+.examples {
+  hr {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .example-title {
+    margin-bottom: 2rem;
+    // just for fun
+    text-shadow: 2px 2px 10px mediumseagreen;
+  }
+
+  .example-content {
+    padding-left: 2rem;
+  }
+}
