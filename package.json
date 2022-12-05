@@ -53,7 +53,7 @@
   "dependencies": {
     "@unite-us/client-utils": "3.0.769",
     "@unite-us/ui": "3.0.997",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "classnames": "^2.2.5",
     "react-app": "^1.1.2",
     "react": "^17.0.2",
